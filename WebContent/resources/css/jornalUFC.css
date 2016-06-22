@@ -1,0 +1,492 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+ol, ul{
+	list-style:none;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+
+
+
+
+/* CLEARFIX */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+
+
+
+
+
+/* ESTILOS PADRÃO */
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:14px;
+	background-color:#EEE;
+	line-height:1.3;
+}
+h1{
+	font-size:18px;
+}
+h2{
+	font-size:16px;
+}
+h3{
+	font-size:14px;
+}
+h4{
+	font-size:11px;
+}
+h5{
+	font-size:10px;
+}
+h6{
+	font-size:9px;
+}
+a:link, a:visited{
+	color:#797979;
+	text-decoration:none;
+}
+a:hover, a:active{
+	color:#000;
+	cursor:pointer;
+}
+
+
+
+
+
+/* MENSAGENS */
+.error_field{
+	color:#C00 !important;
+	display: inline;
+}
+.message, .warning, .success, .error{
+	font-size:15px !important;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+.message{
+	color:#aaa9a6;
+}
+.warning{
+	color:#F90;
+}
+.success{
+	color:#090;
+}
+.error{
+	color:#C00;
+}
+.footer_info{
+	color:#4f6d81;
+}
+
+
+
+
+
+/* PAGINACAO */
+#pagination {
+	float: left;
+	border:0;
+	margin:15px 7px;
+	padding:0;
+}
+
+#pagination li{
+	font-size:11px;
+	list-style:none;
+	margin-right:2px;
+	float:left;
+}
+#pagination a {
+	border:solid 1px #DDD;
+	margin-right:2px;
+}
+#pagination .previous-off, #pagination .next-off {
+	border:solid 1px #DDD;
+	color:#888;
+	display:block;
+	float:left;
+	font-weight:bold;
+	margin-right:2px;
+	padding:3px 4px;
+}
+#pagination .next a, #pagination .previous a {
+	font-weight:bold;
+}
+#pagination .active{
+	background:#DDD;
+	color:#333;
+	display:block; 
+	float:left;
+	padding:6px 8px;
+	border:1px solid #959090;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+#pagination a:link, #pagination a:visited {
+	background:#2AAFB2;
+	color:#FFF;
+	display:block;
+	float:left;
+	padding:6px 8px;
+	text-decoration:none;
+	border:1px solid #15486A;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+#pagination a:hover{
+	border:solid 1px #373A0A;
+}
+
+
+
+
+
+/* FORMULÁRIOS */
+.botaoPadrao{
+	padding:5px;
+	border:0;
+	background:#989F1E;
+	cursor:pointer;
+	color:#FFF;
+	border:1px solid #959090;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+.campoPadrao{
+	background:#F9F9F9;
+	padding:7px;
+	color:#666;
+	margin-bottom:10px;
+	margin-top:2px;
+	border:1px solid #959090;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+
+
+
+
+/* ESTRUTURA */
+#fundo{
+	height:1900px;
+	background:url(imagem/fundo.gif);
+}
+
+#conteudo{	
+	height:1000px;
+	width:960px;
+	margin:0 auto;
+}
+
+#logo{
+	float:left;
+	margin:10px 0 0 10px;
+}
+
+#busca{
+	float:right;
+	width:280px;
+	background:url(../imagem/fundocampo.gif);
+	margin-top:50px;
+}
+
+#campobusca{
+	width:200px;
+	font-size:12px;
+	padding:6px 10px 8px 30px;
+	color:#9BA2A8;
+	background:none;
+	border:0;
+}
+
+#menu{
+	float:right;
+	margin-top:30px;
+}
+
+#menu ul li{
+	position:relative;
+	float:left;
+	padding:10px 10px 10px 10px;
+	z-index:10;
+}
+
+#menu ul li a:link{
+	color:black;
+}
+
+#menu ul li a:hover{
+	background:blue;
+	display:block;
+	padding:1px;
+	color:#ffffff;
+	-moz-border-radius: 4px 4px 4px 4px;
+} 
+
+#menu ul li a{
+	background:#005DAB;
+	display:block;
+	padding:1px;
+	color:#ffffff;
+	-moz-border-radius: 4px 4px 4px 4px;
+}
+
+#menu ul li a:active{
+	background:none repeat scroll 0 0 #005DAB;
+}
+
+#banner{
+	margin:10px 0 0 17px;
+}
+
+#anuncios{
+	height:175px;
+	background:url(imagem/depoisbanner.gif);
+}
+
+#depoistexto{
+	margin:15px 0 0 15px;
+	width:270px;
+	height:150px;
+	float:left;
+}
+
+#depoistexto h3{
+	color:#005DAB;
+}
+
+#depoistexto h3 a:visited{
+	color:blue;
+}
+
+#depoistexto p{
+	color:#65717C;
+}
+
+#logos{
+	width:580px;
+	height:100px;
+	margin:10px 20px 0 0;
+	float:right;
+}
+.logodentro{
+	float:left;
+	width:140px;
+	text-align:center;
+}
+
+#cursos{
+	margin:10px 0 0 10px;
+}
+
+#interprete{
+	margin:10px 0 0 10px;
+	
+}
+
+#traducao{
+	margin:10px 0 0 10px;
+}
+
+#seta{
+	float:left;
+	margin:40px 0 0 20px;
+}
+
+#saiba-mais{
+	margin:15px 0 0 20px;
+}
+
+#novidades-esquerda{
+	float:left;
+	color:#418FBF;
+}
+
+#mais-noticias-direita{
+	float:right;
+}
+
+#noticias{
+	height:300px;
+	width:560px;
+	float:left;
+	margin-top:30px;
+}
+
+
+
+#noticiacontinuacao{
+	float:left;
+	height:250px;
+	width:360px;
+	margin-left:30px;
+	margin-top:30px;
+	clear:right;
+}
+
+#conteudo-anuncios{
+	clear:both;
+}
+
+#conteudo-anuncios p{
+	float:left;
+	padding:15px;
+	margin-left:1px;
+	width:440px;
+}
+
+.data{
+	float:left;
+	background:#98ADB8;
+	width:45px;
+	text-align:center;
+	color:#ffffff;
+	-moz-border-radius: 4px 4px 4px 4px;
+	margin:15px 0 0 10px
+}
+
+.divisor{
+	border:0;
+	border-top:1px solid #D8D8D8;
+	border-bottom:1px solid #ffffff;
+	clear:left;
+	float:left;
+	width:100%
+}
+
+#video-esquerda{
+	float:left;
+	color:#418FBF;
+}
+
+#canal-direita{
+	float:right;
+}
+
+#canal-video{
+	clear:both;
+	float:left;
+}
+
+.play{
+	float:left;
+	margin-top:10px;
+}
+
+#canal-video p{
+	float:left;
+	width:300px;
+	margin-left:10px;
+	padding:5px;
+}
+
+#depoimento{
+	clear:left;
+	height:261px;
+	text-align:center;
+	background:url(imagem/citacao.png);
+	margin-top:200px;
+	float:left;
+	width:100%;
+}
+
+#depoimento h2{
+	margin-top:50px;
+	color:#4C6B85;
+}
+
+#rodape{
+	background:url(imagem/fundorodape.gif);
+	border-top:1px solid #D8D9D8;
+	height:100px;
+	margin-top:400px;
+}
+
+#celular{
+	float:left;
+	margin:25px 0 0 50px;
+}
+
+#contato{
+	margin:30px 0 0 10px;
+	float:left;
+}
+
+#contato p{
+	color:#4C6B85;
+}
+
+#atratis{
+	float:right;
+	position:relative;
+	margin-right:50px;
+	margin-top:35px;
+}
+
+.login_form{
+	text-align: center;
+	margin:15px 0 0 10px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
